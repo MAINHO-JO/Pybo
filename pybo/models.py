@@ -11,7 +11,6 @@ class Question(models.Model):
     modify_date = models.DateTimeField(null=True, blank=True)
     create_date = models.DateTimeField()
     voter = models.ManyToManyField(User, related_name='voter_question')
-    image = models.ImageField(upload_to= 'images/', null=True, blank=True)
 
     def __str__(self):
         return self.subject
