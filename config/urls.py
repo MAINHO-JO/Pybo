@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-
 from pybo.views import base_views
+from django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
